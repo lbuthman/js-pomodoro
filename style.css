@@ -1,0 +1,28 @@
+body {
+    font-family: 'Poiret One', cursive;
+    background: url(http://rdmetalsky.com/wp-content/uploads/2014/01/textures-metal-scratched-22.lt-copy.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Righteous', cursive;
+    margin-top: 4%;
+    text-shadow: -3px 5px 5px #FFFFFF;
+}
+
+span {
+    background: blue;
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+#pom-settings {
+    margin-top: 4%;
+}
