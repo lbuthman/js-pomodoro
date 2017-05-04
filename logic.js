@@ -3,8 +3,8 @@ $(document).ready(function() {
     $("button").click(function() {
         var value;
         var pomNum = "#pom-num";
-        var workNum = "#pom-num";
-        var breakNum = "#pom-num";
+        var workNum = "#work-num";
+        var breakNum = "#break-num";
         var type = $(this).attr("id");
         switch (type) {
             case "pom-plus":
@@ -15,7 +15,7 @@ $(document).ready(function() {
                 break;
             case "pom-minus":
                 value = parseInt($(pomNum).text()) - 1;
-                if (value >= 0) {
+                if (value >= 1) {
                     $(pomNum).text(value);
                 }
                 break;
