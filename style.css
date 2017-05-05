@@ -1,16 +1,27 @@
 body {
-    font-family: 'Poiret One', cursive;
-    background: url(http://rdmetalsky.com/wp-content/uploads/2014/01/textures-metal-scratched-22.lt-copy.jpg) no-repeat center center fixed;
+    font-family: 'Nunito Sans', sans-serif;
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/6b/e1/84/6be1847b56e3832a614699142d1e09d8.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-header {
-    font-family: 'Righteous', cursive;
+header #description {
+    margin-top: -1%;
+    font-size: 20px;
+    background: #EAC435;
+}
+
+header #title {
+    font-family: 'Lobster', cursive;
     margin-top: 4%;
+    font-size: 65px;
     text-shadow: -3px 5px 5px #FFFFFF;
+}
+
+#timer {
+    font-size: 100px;
 }
 
 .pomodoro {
@@ -19,8 +30,8 @@ header {
     padding-right: 35px;
 }
 
-span {
-    background: blue;
+.settings {
+    background: #3E6990;
     font-size: 24px;
     padding: 5px 20px 5px 20px;
     color: white;
@@ -30,5 +41,5 @@ span {
 }
 
 #pom-settings {
-    margin-top: 4%;
+    margin-top: 2%;
 }
