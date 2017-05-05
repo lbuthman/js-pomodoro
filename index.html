@@ -3,66 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Pom Crusher 9001</title>
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lobster" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <header>
+<header>
+    <div class="container">
+        <div class="col-xs-3 text-center">
+            <p id="title">Pom Crusher 9001<p>
+            <p id="description">Focus hard. Crush some Pomodoros.<p>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
         <div class="col-xs-12 text-center">
-            <h1>Pom Crusher 9001</h1>
-            <h5>Focus hard. Crush some Pomodoros.</h5>
+            <h3 id="timer">25:00</h3>
         </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="col-xs-12 text-center">
-                <h3 id="timer">25:00</h3>
-            </div>
-            <div class="col-xs-6 text-center">
-                <button type="button" class="btn btn-default btn-lg" aria-label="Start">
-            <span class="glyphicon glyphicon-play" aria-hidden="true">
-            </span>
-                </button>
-                <button type="button" class="btn btn-default btn-lg" aria-label="Pause">
-            <span class="glyphicon glyphicon-pause" aria-hidden="true">
-            </span>
-                </button>
-                <button type="button" class="btn btn-default btn-lg" aria-label="Restart">
-            <span class="glyphicon glyphicon-refresh" aria-hidden="true">
-            </span>
-                </button>
-            </div>
+        <div class="col-xs-6 text-center">
+            <button type="button" class="btn btn-default btn-lg" aria-label="Start">
+          <span class="glyphicon glyphicon-play" aria-hidden="true">
+          </span>
+            </button>
+            <button type="button" class="btn btn-default btn-lg" aria-label="Pause">
+          <span class="glyphicon glyphicon-pause" aria-hidden="true">
+          </span>
+            </button>
+            <button type="button" class="btn btn-default btn-lg" aria-label="Restart">
+          <span class="glyphicon glyphicon-refresh" aria-hidden="true">
+          </span>
+            </button>
         </div>
-    </section>
-    <section>
-        <div class="row" id="pom-settings">
-            <div class="col-md-4 col-xs-12 text-center">
-                <h4 class="questions">How many<br/>Poms?</h4>
-                <button type="button" class="btn btn-default btn-lg" id="pom-minus">-</button>
-                <span class="settings" id="pom-num">3</span>
-                <button type="button" class="btn btn-default btn-lg" id="pom-plus">+</button>
-            </div>
-            <div class="col-md-4 col-xs-12 text-center">
-                <h4 class="questions">How many<br/>Minutes?</h4>
-                <button type="button" class="btn btn-default btn-lg" id="work-minus">-</button>
-                <span class="settings" id="work-num">25</span>
-                <button type="button" class="btn btn-default btn-lg" id="work-plus">+</button>
-            </div>
-            <div class="col-md-4 col-xs-12 text-center">
-                <h4 class="questions">How long a<br/>Break?</h4>
-                <button type="button" class="btn btn-default btn-lg" id="break-minus">-</button>
-                <span class="settings" id="break-num">5</span>
-                <button type="button" class="btn btn-default btn-lg" id="break-plus">+</button>
-            </div>
+    </div>
+</section>
+<section>
+    <div class="row" id="pom-settings">
+        <div class="col-md-4 col-xs-12 text-center">
+            <h4 class="questions">How many<br/>Poms?</h4>
+            <button type="button" class="btn btn-default btn-lg" id="pom-minus">-</button>
+            <span class="settings" id="pom-num">3</span>
+            <button type="button" class="btn btn-default btn-lg" id="pom-plus">+</button>
         </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col-md-12 text-center" id="pom-holder">
-            </div>
+        <div class="col-md-4 col-xs-12 text-center">
+            <h4 class="questions">How many<br/>Minutes?</h4>
+            <button type="button" class="btn btn-default btn-lg" id="work-minus">-</button>
+            <span class="settings" id="work-num">25</span>
+            <button type="button" class="btn btn-default btn-lg" id="work-plus">+</button>
         </div>
-    </section>
-</div>
+        <div class="col-md-4 col-xs-12 text-center">
+            <h4 class="questions">How long a<br/>Break?</h4>
+            <button type="button" class="btn btn-default btn-lg" id="break-minus">-</button>
+            <span class="settings" id="break-num">5</span>
+            <button type="button" class="btn btn-default btn-lg" id="break-plus">+</button>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <div class="col-md-12 text-center" id="pom-holder">
+        </div>
+    </div>
+</section>
 </body>
 </html>
