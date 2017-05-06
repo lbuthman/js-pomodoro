@@ -1,3 +1,11 @@
+/*Color Pallette
+#EAC435 - Saffron
+#3E6990 - Queen Blue
+#1B998B - Jungle Green
+#313E50 - Charcoal
+#E83F6F - Paradise Pink
+*/
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     background: url(https://s-media-cache-ak0.pinimg.com/originals/6b/e1/84/6be1847b56e3832a614699142d1e09d8.jpg) no-repeat center center fixed;
@@ -5,6 +13,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.controls {
+    margin-top: 3%;
 }
 
 header #description {
@@ -22,12 +34,21 @@ header #title {
 
 #timer {
     font-size: 100px;
+    color: #FBFCFF;
+    background-color: #313E50;
+    opacity: 0.92;
+    max-width: 300px;
+    margin: auto;
 }
 
 .pomodoro {
     height: 100px;
     margin-top: 5%;
     padding-right: 35px;
+}
+
+.questions {
+    font-size: 20px;
 }
 
 .settings {
