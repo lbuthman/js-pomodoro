@@ -1,9 +1,9 @@
 //default values
-var timerMinute = 1;
+var timerMinute = 25;
 var timerSeconds = 0;
 var startTime = timerMinute;
 var timerInterval;
-var restMinutes = 1;
+var restMinutes = 25;
 var restSeconds = 0;
 var startRest = restMinutes;
 var restInterval;
@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 /*handle start button click event*/
 $("#start").click(function() {
+
     if (RESTING) {
         restTimer();
     } else {
@@ -41,14 +42,7 @@ $("#pause").click(function() {
 
 /*handle refresh button click event*/
 $("#restart").click(function() {
-    $("#timer").css("background-color", RESET_COLOR);
-    clearInterval(timerInterval);
-    clearInterval(restInterval);
-    timerMinute = startTime;
-    timerSeconds = 0;
-    restMinutes = startRest;
-    restSeconds = 0;
-    $(timerSelector).text(timerMinute + ":" + "0" + timerSeconds);
+    resetTimer();
 });
 
 /*handle pomodoro settings button clicks*/
@@ -107,6 +101,12 @@ $("button").click(function() {
 });
 
 function workTimer() {
+
+    if (totalPoms === crushedPoms) {
+        finished();
+        return;
+    }
+
     $("#timer").css("background-color", ON_COLOR);
     updateWorkTimerText();
 
@@ -171,6 +171,22 @@ function updateRestTimerText() {
     } else {
         $(timerSelector).text(restMinutes + ":" + restSeconds);
     }
+}
+
+function resetTimer() {
+    $("#timer").css("background-color", RESET_COLOR);
+    clearInterval(timerInterval);
+    clearInterval(restInterval);
+    timerMinute = startTime;
+    timerSeconds = 0;
+    restMinutes = startRest;
+    restSeconds = 0;
+    $(timerSelector).text(timerMinute + ":" + "0" + timerSeconds);
+}
+
+function finished() {
+    resetTimer();
+    $(timerSelector).text("DONE!");
 }
 
 function renderPomodoro(value) {
